@@ -1,0 +1,21 @@
+
+visited:
+https://zhidao.baidu.com/question/619991738370794212.html
+    http://blog.csdn.net/qq_21108099/article/details/50901529
+
+outline: http://www.zhangxinxu.com/wordpress/2015/04/css3-radius-outline/
+
+
+clip:https://www.cnblogs.com/tianma3798/p/5862126.html
+
+vertical-align:https://www.cnblogs.com/xiaohuochai/p/5271217.html
+
+lang伪类：http://www.manongjc.com/article/1340.html （还有focus）
+
+after选择器：http://www.w3school.com.cn/cssref/selector_after.asp
+
+first-child伪类：http://www.w3school.com.cn/css/css_pseudo_classes.asp
+
+伪类和伪元素：https://segmentfault.com/a/1190000000484493
+
+max-width和缩放特性（答案一楼）：https://segmentfault.com/q/1010000008451702
