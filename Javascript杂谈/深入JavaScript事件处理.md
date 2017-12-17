@@ -206,7 +206,8 @@ demo.html
         <a href="https://www.baidu.com/" target="_blank" id="go">点我不会跳转</a>
         <script>
             /* 使用时间对象Event */
-            function showMessage(event){
+            function showMessage(event,info){
+				alert("Info : "+ info);
                 alert(event.type+"/n"+event.target.nodeName);
                 event.stopPropagation();
             }
@@ -219,7 +220,9 @@ demo.html
             }
             let btn2 = document.getElementById("btn-2");
             let btn3 = document.getElementById("btn-3");
-            eventUtil.addHandler(btn2,"click",showMessage); // 这里不需要showMessage(event)
+            eventUtil.addHandler(btn2,"click",()=>{
+				showMessage(event || window.event,"fef");
+			}); // 这里不需要showMessage(event)
             eventUtil.addHandler(btn3,"click",showMessage);
             
             /* 阻止冒泡 */
