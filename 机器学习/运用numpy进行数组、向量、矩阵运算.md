@@ -319,12 +319,15 @@ print(a)
 **元素级，是针对每个element。并且，函数分为一元（一个参数）和二元（两个参数）**
 
 **一元的func：**
+
 ![4.png](./image/运用numpy进行数组、向量、矩阵运算/4.png)
+
 ![5.png](./image/运用numpy进行数组、向量、矩阵运算/5.png)
 
 
-<br/>
-**二元的func：**
+
+**二元的func**
+
 ![6.png](./image/运用numpy进行数组、向量、矩阵运算/6.png)
 
 
@@ -350,7 +353,7 @@ print(np.modf(arr)) #用于浮点数数组的整数部分和小数部分
 ```python
 x = np.random.randn(8)
 y = np.random.randn(8)
-print("x:",x,";/ny:",y)
+print("x:",x,";\ny:",y)
 print(np.maximum(x,y)) # 求元素级的最大值
 ```
 
