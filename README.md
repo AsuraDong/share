@@ -4,7 +4,6 @@
 
 ## 3. 目录
 
-### 3.1 Web
 - [CSS](./CSS/README.md)
 - [HTML](./HTML/README.md)
 - [Javascript杂谈](./Javascript杂谈/README.md)
@@ -21,5 +20,3 @@
 - [网络编程](./网络编程/README.md)
 - [网页布局和设计](./网页布局和设计/README.md)
 - [自然语言处理](./自然语言处理/README.md)
-
-### 3.2 DataScience
