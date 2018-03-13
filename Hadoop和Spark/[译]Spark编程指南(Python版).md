@@ -245,7 +245,7 @@ counts = pairs.reduceByKey(lambda a, b: a + b)
 下面的表格列出了Spark支持的部分常用启动操作。欲知细节，请查阅RDD API文档（Scala, Java, Python）和键值对RDD函数文档（Scala, Java）。
 （译者注：这部分翻译比较简略，仅供简单参考，具体细节请看文档）
 
-启动操作 | 作用
+|启动操作 | 作用|
 |- | -|
 | `reduce(func)` | 使用func进行聚集计算,func的参数是两个，返回值一个，两次func运行应当是完全解耦的，这样才能正确地并行运算 |
 | `collect()` | 向驱动程序返回数据集的元素组成的数组 |
