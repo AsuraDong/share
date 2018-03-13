@@ -247,18 +247,18 @@ counts = pairs.reduceByKey(lambda a, b: a + b)
 
 启动操作 | 作用
 |- | -|
-`reduce(func)` | 使用func进行聚集计算,func的参数是两个，返回值一个，两次func运行应当是完全解耦的，这样才能正确地并行运算
-`collect()` | 向驱动程序返回数据集的元素组成的数组
-`count()` | 返回数据集元素的数量
-`first()` | 返回数据集的第一个元素
-`take(n)` | 返回前n个元素组成的数组
-`takeSample(withReplacement, num, [seed])` | 返回一个由原数据集中任意num个元素的suzuki，并且替换之
-`takeOrder(n, [ordering])` | 返回排序后的前n个元素
-`saveAsTextFile(path)` | 将数据集的元素写成文本文件
-`saveAsSequenceFile(path)` | 将数据集的元素写成序列文件，这个API只能用于Java和Scala程序
-`saveAsObjectFile(path)` | 将数据集的元素使用Java的序列化特性写到文件中，这个API只能用于Java和Scala程序
-`countByCount()` | 只能用于键值对RDD，返回一个(K, int) hashmap，返回每个key的出现次数
-`foreach(func)` | 对数据集的每个元素执行func, 通常用于完成一些带有副作用的函数，比如更新累加器（见下文）或与外部存储交互等
+| `reduce(func)` | 使用func进行聚集计算,func的参数是两个，返回值一个，两次func运行应当是完全解耦的，这样才能正确地并行运算 |
+| `collect()` | 向驱动程序返回数据集的元素组成的数组 |
+| `count()` | 返回数据集元素的数量 |
+| `first()` | 返回数据集的第一个元素 |
+| `take(n)` | 返回前n个元素组成的数组 |
+| `takeSample(withReplacement, num, [seed])` | 返回一个由原数据集中任意num个元素的suzuki，并且替换之 |
+| `takeOrder(n, [ordering])` | 返回排序后的前n个元素 |
+| `saveAsTextFile(path)` | 将数据集的元素写成文本文件 |
+| `saveAsSequenceFile(path)` | 将数据集的元素写成序列文件，这个API只能用于Java和Scala程序 |
+| `saveAsObjectFile(path)` | 将数据集的元素使用Java的序列化特性写到文件中，这个API只能用于Java和Scala程序 |
+| `countByCount()` | 只能用于键值对RDD，返回一个(K, int) hashmap，返回每个key的出现次数 |
+| `foreach(func)` | 对数据集的每个元素执行func, 通常用于完成一些带有副作用的函数，比如更新累加器（见下文）或与外部存储交互等 |
 
 
 
