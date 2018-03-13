@@ -220,25 +220,25 @@ counts = pairs.reduceByKey(lambda a, b: a + b)
 
 |转化操作 | 作用|
 | - | - |
-|map(func) | 返回一个新的分布数据集，由原数据集元素经func处理后的结果组成|
-|filter(func) | 返回一个新的数据集，由传给func返回True的原数据集元素组成|
-|flatMap(func) | 与map类似，但是每个传入元素可能有0或多个返回值，func可以返回一个序列而不是一个值|
-|mapParitions(func) | 类似map，但是RDD的每个分片都会分开独立运行，所以func的参数和返回值必须都是迭代器|
-|mapParitionsWithIndex(func) | 类似mapParitions，但是func有两个参数，第一个是分片的序号，第二个是迭代器。返回值还是迭代器|
-|sample(withReplacement, fraction, seed) | 使用提供的随机数种子取样，然后替换或不替换|
-|union(otherDataset) | 返回新的数据集，包括原数据集和参数数据集的所有元素|
-|intersection(otherDataset) | 返回新数据集，是两个集的交集|
-|distinct([numTasks]) | 返回新的集，包括原集中的不重复元素|
-|groupByKey([numTasks]) | 当用于键值对RDD时返回(键，值迭代器)对的数据集|
-|aggregateByKey(zeroValue)(seqOp, combOp, [numTasks]) | 用于键值对RDD时返回（K，U）对集，对每一个Key的value进行聚集计算|
-|sortByKey([ascending], [numTasks])|用于键值对RDD时会返回RDD按键的顺序排序，升降序由第一个参数决定|
-|join(otherDataset, [numTasks]) | 用于键值对(K, V)和(K, W)RDD时返回(K, (V, W))对RDD|
-|cogroup(otherDataset, [numTasks]) | 用于两个键值对RDD时返回(K, (V迭代器， W迭代器))RDD|
-|cartesian(otherDataset) | 用于T和U类型RDD时返回(T, U)对类型键值对RDD|
-|pipe(command, [envVars]) | 通过shell命令管道处理每个RDD分片|
-|coalesce(numPartitions) | 把RDD的分片数量降低到参数大小|
-|repartition(numPartitions) | 重新打乱RDD中元素顺序并重新分片，数量由参数决定|
-|repartitionAndSortWithinPartitions(partitioner) | 按照参数给定的分片器重新分片，同时每个分片内部按照键排序|
+|`map(func)` | 返回一个新的分布数据集，由原数据集元素经func处理后的结果组成|
+|`filter(func)` | 返回一个新的数据集，由传给func返回True的原数据集元素组成|
+|`flatMap(func)` | 与map类似，但是每个传入元素可能有0或多个返回值，func可以返回一个序列而不是一个值|
+|`mapParitions(func)` | 类似map，但是RDD的每个分片都会分开独立运行，所以func的参数和返回值必须都是迭代器|
+|`mapParitionsWithIndex(func)` | 类似mapParitions，但是func有两个参数，第一个是分片的序号，第二个是迭代器。返回值还是迭代器|
+|`sample(withReplacement, fraction, seed)` | 使用提供的随机数种子取样，然后替换或不替换|
+|`union(otherDataset)` | 返回新的数据集，包括原数据集和参数数据集的所有元素|
+|`intersection(otherDataset)` | 返回新数据集，是两个集的交集|
+|`distinct([numTasks])` | 返回新的集，包括原集中的不重复元素|
+|`groupByKey([numTasks])` | 当用于键值对RDD时返回(键，值迭代器)对的数据集|
+|`aggregateByKey(zeroValue)(seqOp, combOp, [numTasks])` | 用于键值对RDD时返回（K，U）对集，对每一个Key的value进行聚集计算|
+|`sortByKey([ascending], [numTasks])`|用于键值对RDD时会返回RDD按键的顺序排序，升降序由第一个参数决定|
+|`join(otherDataset, [numTasks])` | 用于键值对(K, V)和(K, W)RDD时返回(K, (V, W))对RDD|
+|`cogroup(otherDataset, [numTasks])` | 用于两个键值对RDD时返回(K, (V迭代器， W迭代器))RDD|
+|`cartesian(otherDataset)` | 用于T和U类型RDD时返回(T, U)对类型键值对RDD|
+|`pipe(command, [envVars])` | 通过shell命令管道处理每个RDD分片|
+|`coalesce(numPartitions)` | 把RDD的分片数量降低到参数大小|
+|`repartition(numPartitions)` | 重新打乱RDD中元素顺序并重新分片，数量由参数决定|
+|`repartitionAndSortWithinPartitions(partitioner)` | 按照参数给定的分片器重新分片，同时每个分片内部按照键排序|
 
 
 ### 启动操作
