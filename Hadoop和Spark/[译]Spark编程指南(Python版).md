@@ -217,8 +217,9 @@ counts = pairs.reduceByKey(lambda a, b: a + b)
 ### 转化操作
 下面的表格列出了Spark支持的常用转化操作。欲知细节，请查阅RDD API文档（Scala, Java, Python）和键值对RDD函数文档（Scala, Java）。
 （译者注：这部分翻译比较简略，仅供简单参考，具体细节请看文档）
+
 |转化操作 | 作用|
-|-|-|
+| - | - |
 |map(func) | 返回一个新的分布数据集，由原数据集元素经func处理后的结果组成|
 |filter(func) | 返回一个新的数据集，由传给func返回True的原数据集元素组成|
 |flatMap(func) | 与map类似，但是每个传入元素可能有0或多个返回值，func可以返回一个序列而不是一个值|
